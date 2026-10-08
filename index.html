@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Assistência técnica, acessórios e papelaria em Lençóis Paulista. Fale com a ITB Tech pelo WhatsApp ou visite nossa loja."
+    />
+    <meta name="theme-color" content="#07152f" />
+    <title>ITB Tech | Assistência Técnica, Acessórios e Papelaria em Lençóis Paulista</title>
+    <meta property="og:title" content="ITB Tech | Assistência Técnica e Acessórios" />
+    <meta
+      property="og:description"
+      content="Assistência técnica, acessórios e papelaria em Lençóis Paulista. Fale com a ITB Tech ou visite a loja."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ITB Tech Assistência Técnica e Acessórios",
+        "image": "assets/img/logo-itb-tech.png",
+        "telephone": "+55-14-99137-5042",
+        "sameAs": [
+          "https://www.instagram.com/itb_tech_/",
+          "https://maps.app.goo.gl/Uc9qxBAzqAuhYCza9"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Mal. Castelo Branco, 272",
+          "addressLocality": "Lençóis Paulista",
+          "addressRegion": "SP",
+          "postalCode": "18683-430",
+          "addressCountry": "BR"
+        },
+        "openingHours": [
+          "Mo 09:00-18:00",
+          "Tu 09:00-18:00",
+          "We 09:00-17:00",
+          "Th 09:00-18:00",
+          "Fr 09:00-18:00",
+          "Sa 09:00-13:30"
+        ]
+      }
+    </script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#inicio" aria-label="ITB Tech, início">
+          <img src="assets/img/logo-itb-tech.png" alt="" width="48" height="48" />
+          <span class="brand-copy">
+            <strong>ITB Tech</strong>
+            <small>Assistência Técnica e Acessórios</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Abrir menu</span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#localizacao">Localização</a>
+          <a class="button button-small button-blue" href="https://wa.me/5514991375042" target="_blank" rel="noreferrer">
+            Falar no WhatsApp
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-light">ITB TECH <span>•</span> LENÇÓIS PAULISTA</p>
+            <h1>Seu celular, computador e acessórios <em>em um só lugar.</em></h1>
+            <p class="hero-intro">
+              Assistência técnica, acessórios e papelaria para resolver o que você precisa no dia a dia.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-yellow" href="#orcamento">Solicitar orçamento</a>
+              <a class="button button-outline-light" href="https://maps.app.goo.gl/Uc9qxBAzqAuhYCza9" target="_blank" rel="noreferrer">Como chegar</a>
+            </div>
+          </div>
+
+          <figure class="hero-photo">
+            <img
+              src="assets/img/fachada-itb-tech.png"
+              alt="Fachada e entrada da loja ITB Tech em Lençóis Paulista"
+              width="224"
+              height="300"
+              fetchpriority="high"
+            />
+            <figcaption><span>ITB Tech</span> <span>Lençóis Paulista, SP</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="service-strip" aria-label="O que você encontra na ITB Tech">
+        <div class="container strip-items">
+          <span>Assistência técnica</span>
+          <span>Acessórios</span>
+          <span>Papelaria</span>
+          <span class="strip-note">
+            <span class="status-indicator" data-status-indicator></span>
+            <span data-store-status aria-live="polite">Verificando horário...</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="section services-section" id="servicos">
+        <div class="container">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">Assistência técnica</p>
+              <h2>Seu aparelho deu problema?</h2>
+            </div>
+            <p>Conte o que aconteceu. A equipe da ITB Tech conversa com você sobre os próximos passos.</p>
+          </div>
+
+          <div class="service-list">
+            <article class="service-item">
+              <span class="service-number">01</span>
+              <div><h3>Assistência para celulares</h3><p>Tela, bateria, carga e outros problemas do aparelho.</p></div>
+              <button class="text-action" type="button" data-whatsapp-message="Olá, ITB Tech! Meu celular está com problema e gostaria de saber se vocês podem me ajudar.">Falar sobre este serviço <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="service-item">
+              <span class="service-number">02</span>
+              <div><h3>Manutenção de computadores</h3><p>Ajuda com manutenção e problemas de funcionamento.</p></div>
+              <button class="text-action" type="button" data-whatsapp-message="Olá, ITB Tech! Meu computador está com problema e gostaria de conversar sobre manutenção.">Falar sobre este serviço <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="service-item">
+              <span class="service-number">03</span>
+              <div><h3>Manutenção de notebooks</h3><p>Conte o que está acontecendo com seu notebook.</p></div>
+              <button class="text-action" type="button" data-whatsapp-message="Olá, ITB Tech! Meu notebook está com problema e gostaria de conversar sobre manutenção.">Falar sobre este serviço <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="service-item">
+              <span class="service-number">04</span>
+              <div><h3>Formatação</h3><p>Consulte o atendimento para seu computador ou notebook.</p></div>
+              <button class="text-action" type="button" data-whatsapp-message="Olá, ITB Tech! Gostaria de consultar sobre formatação do meu computador.">Falar sobre este serviço <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="service-item">
+              <span class="service-number">05</span>
+              <div><h3>Acessórios</h3><p>Consulte sobre acessórios para celular e computador.</p></div>
+              <button class="text-action" type="button" data-whatsapp-message="Olá, ITB Tech! Gostaria de consultar a disponibilidade de acessórios para celular ou computador.">Consultar acessórios <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="service-item">
+              <span class="service-number">06</span>
+              <div><h3>Películas e capinhas</h3><p>Fale com a equipe sobre opções para o modelo do seu aparelho.</p></div>
+              <button class="text-action" type="button" data-whatsapp-message="Olá, ITB Tech! Gostaria de consultar películas ou capinhas para o meu aparelho.">Consultar opções <span aria-hidden="true">↗</span></button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-help" aria-labelledby="quick-help-title">
+        <div class="container quick-help-layout">
+          <div class="quick-help-copy">
+            <p class="eyebrow eyebrow-light">Atendimento direto</p>
+            <h2 id="quick-help-title">Como podemos ajudar?</h2>
+            <p>Escolha uma opção e comece uma conversa com a gente pelo WhatsApp.</p>
+          </div>
+          <div class="quick-actions">
+            <button type="button" data-whatsapp-message="Olá, ITB Tech! Meu celular está com problema e gostaria de saber se vocês podem me ajudar.">Meu celular está com problema <span aria-hidden="true">↗</span></button>
+            <button type="button" data-whatsapp-message="Olá, ITB Tech! Meu computador está com problema e gostaria de saber se vocês podem me ajudar.">Meu computador está com problema <span aria-hidden="true">↗</span></button>
+            <button type="button" data-whatsapp-message="Olá, ITB Tech! Preciso de uma película ou capinha para meu aparelho.">Preciso de película ou capinha <span aria-hidden="true">↗</span></button>
+            <button type="button" data-whatsapp-message="Olá, ITB Tech! Gostaria de consultar a disponibilidade de um carregador.">Preciso de um carregador <span aria-hidden="true">↗</span></button>
+            <a href="https://maps.app.goo.gl/Uc9qxBAzqAuhYCza9" target="_blank" rel="noreferrer">Quero ir até a loja <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products-section" id="produtos">
+        <div class="container products-layout">
+          <div class="products-copy">
+            <p class="eyebrow">Acessórios</p>
+            <h2>Encontre o que precisa para o seu dia.</h2>
+            <p>Consulte a equipe sobre acessórios e a disponibilidade do produto que você procura.</p>
+            <ul class="category-list" aria-label="Categorias de produtos">
+              <li>Capinhas</li>
+              <li>Películas</li>
+              <li>Carregadores e cabos</li>
+              <li>Fones</li>
+              <li>Caixas de som</li>
+              <li>Smartwatches</li>
+              <li>Acessórios para computador</li>
+            </ul>
+          </div>
+          <form class="product-form" id="product-form">
+            <p class="form-kicker">Consulta rápida</p>
+            <h3>Procurando um produto?</h3>
+            <label for="product-name">Escreva o que você precisa</label>
+            <input id="product-name" name="produto" type="text" placeholder="Ex.: película para meu celular" required />
+            <button class="button button-blue" type="submit">Consultar disponibilidade <span aria-hidden="true">↗</span></button>
+            <small>Vamos encaminhar sua pergunta pelo WhatsApp. Não exibimos estoque ou preços online.</small>
+          </form>
+        </div>
+      </section>
+
+      <section class="stationery-section" aria-labelledby="stationery-title">
+        <div class="container stationery-layout">
+          <div class="stationery-mark" aria-hidden="true"><span>ITB</span><span>+</span></div>
+          <div class="stationery-copy">
+            <p class="eyebrow eyebrow-light">Também na ITB Tech</p>
+            <h2 id="stationery-title">Papelaria para estudo, trabalho e rotina.</h2>
+            <p>Além de tecnologia e assistência, você encontra itens de papelaria e utilidades na loja.</p>
+          </div>
+          <div class="stationery-categories">
+            <span>Materiais escolares</span>
+            <span>Materiais de escritório</span>
+            <span>Itens de papelaria</span>
+            <a href="https://wa.me/5514991375042?text=Ol%C3%A1%2C%20ITB%20Tech!%20Gostaria%20de%20consultar%20itens%20de%20papelaria." target="_blank" rel="noreferrer">Consultar papelaria <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-section" id="orcamento">
+        <div class="container quote-layout">
+          <div class="quote-copy">
+            <p class="eyebrow">Orçamento</p>
+            <h2>Explique o que aconteceu.</h2>
+            <p>Preencha os campos e a mensagem será preparada para você enviar à ITB Tech pelo WhatsApp.</p>
+            <p class="quote-note">O formulário não salva seus dados e não envia nada sem sua confirmação no WhatsApp.</p>
+          </div>
+          <form class="quote-form" id="budget-form">
+            <div class="form-row">
+              <div class="field-group">
+                <label for="budget-category">Categoria</label>
+                <select id="budget-category" name="categoria" required>
+                  <option value="">Selecione</option>
+                  <option value="Celular">Celular</option>
+                  <option value="Computador">Computador</option>
+                  <option value="Notebook">Notebook</option>
+                  <option value="Acessório">Acessório</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="budget-model">Modelo</label>
+                <input id="budget-model" name="modelo" type="text" placeholder="Se souber" />
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="budget-problem">Problema ou necessidade</label>
+              <textarea id="budget-problem" name="problema" rows="4" placeholder="Conte brevemente o que aconteceu" required></textarea>
+            </div>
+            <button class="button button-yellow" type="submit">Enviar orçamento pelo WhatsApp <span aria-hidden="true">↗</span></button>
+          </form>
+        </div>
+      </section>
+
+      <section class="about-section" id="sobre">
+        <div class="container about-layout">
+          <div>
+            <p class="eyebrow eyebrow-light">Sobre a ITB</p>
+            <h2>Tecnologia, assistência e praticidade perto de você.</h2>
+          </div>
+          <div class="about-copy">
+            <p>A ITB Tech reúne assistência técnica, acessórios e papelaria em um só lugar, com atendimento próximo em Lençóis Paulista.</p>
+            <a class="text-action text-action-light" href="https://www.instagram.com/itb_tech_/" target="_blank" rel="noreferrer">Acompanhe no Instagram <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="localizacao">
+        <div class="container location-layout">
+          <div class="location-copy">
+            <p class="eyebrow">Visite a loja</p>
+            <h2>Estamos em Lençóis Paulista.</h2>
+            <address>
+              Av. Mal. Castelo Branco, 272<br />
+              Jardim Ubirama<br />
+              Lençóis Paulista - SP, 18683-430
+            </address>
+            <div class="location-actions">
+              <a class="button button-blue" href="https://maps.app.goo.gl/Uc9qxBAzqAuhYCza9" target="_blank" rel="noreferrer">Como chegar <span aria-hidden="true">↗</span></a>
+              <a class="text-action" href="tel:+5514991375042">Ligar: (14) 99137-5042</a>
+            </div>
+          </div>
+          <div class="hours-panel">
+            <div class="hours-heading">
+              <h3>Horário de atendimento</h3>
+              <span class="open-status" data-hours-status aria-live="polite">Verificando...</span>
+            </div>
+            <p class="hours-today" data-hours-today>Atendimento hoje: —</p>
+            <dl class="hours-list">
+              <div class="schedule-item"><dt>Segunda</dt><dd>09:00–18:00</dd></div>
+              <div class="schedule-item"><dt>Terça</dt><dd>09:00–18:00</dd></div>
+              <div class="schedule-item"><dt>Quarta</dt><dd>09:00–17:00</dd></div>
+              <div class="schedule-item"><dt>Quinta</dt><dd>09:00–18:00</dd></div>
+              <div class="schedule-item"><dt>Sexta</dt><dd>09:00–18:00</dd></div>
+              <div class="schedule-item"><dt>Sábado</dt><dd>09:00–13:30</dd></div>
+              <div class="schedule-item"><dt>Domingo</dt><dd>Fechado</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-cta">
+        <div class="container contact-cta-layout">
+          <div>
+            <p class="eyebrow eyebrow-light">Fale com a gente</p>
+            <h2>Precisou de ajuda?</h2>
+            <p>Fale com a ITB Tech pelo WhatsApp ou venha até nossa loja.</p>
+          </div>
+          <div class="contact-cta-actions">
+            <a class="button button-yellow" href="https://wa.me/5514991375042" target="_blank" rel="noreferrer">Falar no WhatsApp</a>
+            <a class="button button-outline-light" href="https://www.instagram.com/itb_tech_/" target="_blank" rel="noreferrer">Ver Instagram @itb_tech_</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-name">
+          <strong>ITB Tech</strong>
+          <span>Assistência técnica, acessórios e papelaria.</span>
+        </div>
+        <address>Av. Mal. Castelo Branco, 272<br />Lençóis Paulista - SP</address>
+        <div class="footer-links">
+          <a href="https://wa.me/5514991375042" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/itb_tech_/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 ITB Tech. Todos os direitos reservados.</span>
+        <a href="tel:+5514991375042">(14) 99137-5042</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
