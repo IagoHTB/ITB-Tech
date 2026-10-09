@@ -719,6 +719,7 @@ p {
 
 .instagram-card img {
   width: 100%;
+  height: clamp(250px, 30vw, 340px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
 }
@@ -1443,6 +1444,10 @@ p {
     font-size: 11px;
   }
 
+  .instagram-card img {
+    height: clamp(180px, 50vw, 240px);
+  }
+
   .quick-actions button,
   .quick-actions a {
     min-height: 53px;
@@ -1595,6 +1600,10 @@ p {
 
   .instagram-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .instagram-card img {
+    height: clamp(250px, 70vw, 330px);
   }
 
   .category-list li:nth-child(odd) {
