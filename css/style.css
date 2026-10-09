@@ -310,8 +310,8 @@ p {
 .hero-photo {
   position: relative;
   width: 100%;
-  max-width: 420px;
-  height: 395px;
+  max-width: 280px;
+  height: 365px;
   justify-self: end;
   margin: 0;
   padding: 9px;
@@ -799,6 +799,100 @@ p {
   justify-self: start;
 }
 
+.estimate-result {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid #c9d9ff;
+  border-radius: 8px;
+  background: #f4f7ff;
+}
+
+.estimate-result[hidden] {
+  display: none;
+}
+
+.estimate-label,
+.estimate-value,
+.estimate-disclaimer {
+  margin: 0;
+}
+
+.estimate-label {
+  color: var(--itb-blue);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.estimate-value {
+  color: var(--itb-text);
+  font-size: clamp(21px, 3vw, 27px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.25;
+}
+
+.estimate-disclaimer {
+  color: #475569;
+  font-size: 12px;
+}
+
+.estimate-result .button {
+  justify-self: start;
+  margin-top: 4px;
+}
+
+.tips-section {
+  background: var(--itb-light);
+}
+
+.tips-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(40px, 8vw, 100px);
+}
+
+.tips-layout h2 {
+  max-width: 460px;
+  margin: 0;
+  color: var(--itb-text);
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+}
+
+.tips-layout > div:first-child > p:last-child {
+  max-width: 420px;
+  margin: 16px 0 0;
+  color: var(--itb-gray);
+  font-size: 14px;
+}
+
+.tips-list {
+  border-top: 1px solid #d5deeb;
+}
+
+.tips-list details {
+  padding: 17px 0;
+  border-bottom: 1px solid #d5deeb;
+}
+
+.tips-list summary {
+  color: var(--itb-text);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tips-list details p {
+  margin: 10px 0 0;
+  color: var(--itb-gray);
+  font-size: 13px;
+}
+
 .about-section {
   padding-block: clamp(60px, 7vw, 88px);
   background: var(--itb-navy);
@@ -1149,10 +1243,10 @@ p {
   }
 
   .hero-photo {
-    width: 100%;
-    max-width: none;
-    height: min(50vw, 200px);
-    justify-self: stretch;
+    width: min(100%, 280px);
+    max-width: 280px;
+    height: 365px;
+    justify-self: center;
   }
 
   .strip-items {
@@ -1183,6 +1277,7 @@ p {
   .quick-help-layout,
   .products-layout,
   .quote-layout,
+  .tips-layout,
   .about-layout,
   .location-layout {
     grid-template-columns: 1fr;

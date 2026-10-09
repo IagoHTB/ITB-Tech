@@ -62,19 +62,64 @@ function bindWhatsAppActions() {
 function bindForms() {
   const budgetForm = document.querySelector('#budget-form');
   if (budgetForm) {
+    const modelInput = document.querySelector('#budget-model');
+    const repairSelect = document.querySelector('#budget-repair');
+    const detailsInput = document.querySelector('#budget-details');
+    const result = document.querySelector('#estimate-result');
+    const estimateLabel = document.querySelector('#estimate-label');
+    const estimateValue = document.querySelector('#estimate-value');
+    const requestQuoteButton = document.querySelector('#request-quote');
+    const repairRanges = {
+      'Tela': { min: 250, max: 900 },
+      'Bateria': { min: 150, max: 450 },
+      'Conector de carga': { min: 150, max: 400 },
+      'Câmera': { min: 180, max: 500 },
+      'Outro problema': { min: 80, max: 350 }
+    };
+    let currentEstimate = null;
+    const formatCurrency = (amount) => new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+      maximumFractionDigits: 0
+    }).format(amount);
+
     budgetForm.addEventListener('submit', (event) => {
       event.preventDefault();
 
-      const category = document.querySelector('#budget-category').value;
-      const model = document.querySelector('#budget-model').value.trim() || 'Não informado';
-      const problem = document.querySelector('#budget-problem').value.trim();
+      const model = modelInput.value.trim();
+      const repair = repairSelect.value;
+      const range = repairRanges[repair];
+      if (!model || !range) return;
+
+      currentEstimate = { model, repair, range };
+      estimateLabel.textContent = `Referência geral para ${model} • ${repair}`;
+      estimateValue.textContent = `${formatCurrency(range.min)} a ${formatCurrency(range.max)}`;
+      result.hidden = false;
+    });
+
+    [modelInput, repairSelect, detailsInput].forEach((field) => {
+      field.addEventListener('input', () => {
+        currentEstimate = null;
+        result.hidden = true;
+      });
+      field.addEventListener('change', () => {
+        currentEstimate = null;
+        result.hidden = true;
+      });
+    });
+
+    requestQuoteButton.addEventListener('click', () => {
+      if (!currentEstimate) return;
+
+      const details = detailsInput.value.trim();
       const message = [
-        'Olá, ITB Tech! Gostaria de solicitar um orçamento.',
+        'Olá, ITB Tech! Gostaria de confirmar um orçamento para meu celular.',
         '',
-        `Categoria: ${category}`,
-        `Modelo: ${model}`,
-        `Problema: ${problem}`
-      ].join('\n');
+        `Modelo: ${currentEstimate.model}`,
+        `Reparo: ${currentEstimate.repair}`,
+        `Faixa de referência exibida: ${formatCurrency(currentEstimate.range.min)} a ${formatCurrency(currentEstimate.range.max)}`,
+        details ? `Observação: ${details}` : ''
+      ].filter(Boolean).join('\n');
 
       openWhatsApp(message);
     });
